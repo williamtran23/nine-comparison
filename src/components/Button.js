@@ -1,14 +1,15 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
-export class Button extends React.Component {
+export class Buttons extends React.Component {
     render(){
         return(
             <div className="col-2">
-                <button disabled={this.props.selectedNumbers.length === 0}>=</button>
+                <Button variant="dark" disabled={this.props.selectedNumbers.length === 0}>=</Button>
             </div>
         );
     }
 }
 
 
-export default Button;
+export default Buttons;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Stars from './components/Stars';
-import Button from './components/Button';
+import Buttons from './components/Button';
 import Answer from './components/Answer';
 import Numbers from './components/Numbers';
 import './App.css';
@@ -31,7 +31,7 @@ export class Game extends React.Component {
                 <hr />
                 <div className="row">
                     <Stars randomNumberOfStars={this.state.randomNumberOfStars}/>
-                    <Button selectedNumbers={this.state.selectedNumbers}/>
+                    <Buttons selectedNumbers={this.state.selectedNumbers}/>
                     <Answer selectedNumbers={this.state.selectedNumbers}
                             unselectNumber={this.unselectNumber} />
                 </div>
