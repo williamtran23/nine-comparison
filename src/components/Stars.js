@@ -5,7 +5,7 @@ export class Stars extends React.Component {
     render(){
         return(
             <div className="col-5">
-                {_.range(this.props.randomNumberOfStars).map(i =>
+                {_.range(this.props.numberOfStars).map(i =>
                     <i key={i} className="fa fa-star"></i>
                 )}
             </div>
