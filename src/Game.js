@@ -31,7 +31,7 @@ export class Game extends React.Component {
                 <hr />
                 <div className="row">
                     <Stars randomNumberOfStars={this.state.randomNumberOfStars}/>
-                    <Button />
+                    <Button selectedNumbers={this.state.selectedNumbers}/>
                     <Answer selectedNumbers={this.state.selectedNumbers}
                             unselectNumber={this.unselectNumber} />
                 </div>
