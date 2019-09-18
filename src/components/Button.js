@@ -7,7 +7,7 @@ export class Buttons extends React.Component {
         switch (this.props.answerIsCorrect) {
             case true:
                 button =
-                <Button variant="success" >
+                <Button variant="success" onClick={this.props.acceptAnswer}>
                     <i className="fa fa-check"></i>
                 </Button>;
                 break;
