@@ -29,8 +29,12 @@ export class Buttons extends React.Component {
                 break;
         }
         return (
-            <div className="col-2">
+            <div className="col-2 text-center">
                 {button}
+                <br /><br />
+                <Button variant="warning btn-sm" onClick={this.props.redraw}>
+                    <i className="fa fa-refresh"> {this.props.redraws}</i>
+                </Button>
             </div>
         );
     }
