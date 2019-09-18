@@ -7,7 +7,7 @@ import './App.css';
 
 export class Game extends React.Component {
     state = {
-        selectedNumbers: [2, 4],
+        selectedNumbers: [],
     };
     render() {
         return(
