@@ -15,7 +15,11 @@ export class Numbers extends React.Component {
             <div className="card text-center">
                 <div>
                     {Numbers.list.map((number, i) =>
-                            <span key={i} className={numberClassName(number)}>{number}</span>
+                            <span key={i} 
+                                  className={numberClassName(number)}
+                                  onClick={(event) => this.props.selectNumber(number)}>
+                            {number}
+                            </span>
                         )}
                 </div>
             </div>

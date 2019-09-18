@@ -5,7 +5,10 @@ export class Answer extends React.Component {
         return(
             <div className="col-5">
                 {this.props.selectedNumbers.map((number, i) =>
-                    <span key={i}>{number}</span>    
+                    <span key={i}
+                        onClick={(event) => this.props.unselectNumber(number)}>
+                        {number}
+                    </span>    
                 )}
             </div>
         );
